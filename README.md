@@ -30,19 +30,25 @@ All dependencies must be fully installed (executable anywhere without writing a 
 
 There are several parameters that must be chosen on the comand line. These are: 
 
+`profile` -- The exector that nextflow should use. Must be one of the options listed in `nextflow.config`. NOTE: more executors are available that what is currently listed in that file now.
+
+`input_data` -- A CSV that has two columns `prefix` and `vcf`, which names the output files according to the prefix, and has the path to the input vcf, respectively. See the `example_data/oneVCF_dataTEST.csv` for more info. 
+
+`scaffolds` -- File that lists the scaffolds use in the analysis. See `example_data/Cymbopogon_scaffolds.csv` for more info.
+
 `indfilter` -- allows inclusion of individuals with 100% missing data 
 
-`params.depth_low` -- minimum total depth across all individuals
+`depth_low` -- minimum total depth across all individuals
 
-`params.depth_high` -- maximum total depth across all individual 
+`depth_high` -- maximum total depth across all individual 
 
-`params.qual` -- The site quality. 
+`qual` -- The site quality. 
 
-`params.K_low` -- The min number of clusters for NGSadmix.
+`K_low` -- The min number of clusters for NGSadmix.
 
-`params.K_high` -- The max number of cluster for NGSadmix.
+`K_high` -- The max number of cluster for NGSadmix.
 
-`params.n_lines = 10` -- How many lines to skip when thinning data. 
+`n_lines = 10` -- How many lines to skip when thinning data. 
 
 There is one default parameter:
 
