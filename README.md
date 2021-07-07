@@ -34,21 +34,22 @@ There are several parameters that must be chosen on the comand line. These are:
 
 `input_data` -- A CSV that has two columns `prefix` and `vcf`, which names the output files according to the prefix, and has the path to the input vcf, respectively. See the `example_data/oneVCF_dataTEST.csv` for more info. 
 
-`scaffolds` -- File that lists the scaffolds use in the analysis. See `example_data/Cymbopogon_scaffolds.csv` for more info.
+`scaffolds` -- File that lists the scaffolds to be used in the analysis. See `example_data/Cymbopogon_scaffolds.csv` for more info.
 
 `indfilter` -- allows inclusion of individuals with 100% missing data 
-
+-
 `depth_low` -- minimum total depth across all individuals
 
 `depth_high` -- maximum total depth across all individual 
 
 `qual` -- The site quality. 
 
+`n_lines = 10` -- How many lines to skip when thinning data. 
+
 `K_low` -- The min number of clusters for NGSadmix.
 
 `K_high` -- The max number of cluster for NGSadmix.
 
-`n_lines = 10` -- How many lines to skip when thinning data. 
 
 There is one default parameter:
 
