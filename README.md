@@ -30,14 +30,14 @@ All dependencies must be fully installed (executable anywhere without writing a 
 
 There are several parameters that must be chosen on the comand line. These are: 
 
-`profile` -- The exector that nextflow should use. Must be one of the options listed in `nextflow.config`. NOTE: more executors are available that what is currently listed in that file now.
+`profile` -- The exector that nextflow should use. Must be one of the options listed in `nextflow.config`. NOTE: more executors are available than what is currently listed in that file now. See nextflow documentation for others. Also, the slurm profile is set up to run on the farm HPC at UC Davis and will almost certainly need to be edited to use on other systems.
 
 `input_data` -- A CSV that has two columns `prefix` and `vcf`, which names the output files according to the prefix, and has the path to the input vcf, respectively. See the `example_data/oneVCF_dataTEST.csv` for more info. 
 
 `scaffolds` -- File that lists the scaffolds to be used in the analysis. See `example_data/Cymbopogon_scaffolds.csv` for more info.
 
 `indfilter` -- allows inclusion of individuals with 100% missing data 
--
+
 `depth_low` -- minimum total depth across all individuals
 
 `depth_high` -- maximum total depth across all individual 
